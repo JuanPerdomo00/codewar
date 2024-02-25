@@ -12,9 +12,7 @@ def row_sum_odd_numbers(n):
 
     # Bucle para generar las filas de la pirámide
     for i in range(n):
-        # Inicializamos una lista para la fila actual
         row_list = []
-        # Añadimos números impares a la fila actual
         for j in range(i + 1):
             row_list.append(odd_num)
             odd_num += 2
