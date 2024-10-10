@@ -1,7 +1,7 @@
-export function narcissistic(value: number) {
+export function narcissistic(value: number): Boolean {
     // your code here
-    let cap = value.toString().split("")
-    let sum = 0
+    let cap: Array<String> = value.toString().split("")
+    let sum: number = 0
     value.toString().split("").map((a) => parseInt(a)).map((a) => a ** cap.length).forEach((a) => {
         sum += a
         return sum
