@@ -46,14 +46,15 @@ def solution(a: list):
         for i in range(len(a)):
             for j in range(len(a)):
                 if i != j and a[i] > a[j]:
-                        a[i] -= a[j]
-                        tranx = True
-                        break
-            if tranx: break
-        if not tranx: break
-    
-    return sum(a)
+                    a[i] -= a[j]
+                    tranx = True
+                    break
+            if tranx:
+                break
+        if not tranx:
+            break
 
+    return sum(a)
 
 
 if __name__ == "__main__":

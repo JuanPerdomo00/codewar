@@ -15,17 +15,21 @@ import re
 def to_camel_case(text: list[str]) -> str:
     list_strigs = [t for t in text]
     print(list_strigs)
-    words = re.split(r'[-_]', [tex for tex in text])
-    finally_words = ''
+    words = re.split(r"[-_]", [tex for tex in text])
+    finally_words = ""
     for word in words:
-        finally_words += ''.join(word.capitalize())
+        finally_words += "".join(word.capitalize())
 
     return finally_words
-    #return words[0] + ''.join(words.capitalize() for word in words[1:])
+    # return words[0] + ''.join(words.capitalize() for word in words[1:])
 
 
 def main() -> None:
-    list_strigs: list[str] =  ["the-stealth-warrior", "The_Stealth_Warrior", "The_Stealth-Warrior"]
+    list_strigs: list[str] = [
+        "the-stealth-warrior",
+        "The_Stealth_Warrior",
+        "The_Stealth-Warrior",
+    ]
     string: str = to_camel_case(list_strigs)
     print(string)
 

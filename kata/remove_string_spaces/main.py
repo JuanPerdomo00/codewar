@@ -14,8 +14,8 @@ Examples:
 
 
 def no_space(x: str):
-    return ''.join(i for i in x if i != ' ')
+    return "".join(i for i in x if i != " ")
 
 
 if __name__ == "__main__":
-    print(no_space('8 j 8   mBliB8g  imjB8B8  jl  B'))
+    print(no_space("8 j 8   mBliB8g  imjB8B8  jl  B"))

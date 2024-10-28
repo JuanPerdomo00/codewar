@@ -39,4 +39,3 @@ if __name__ == "__main__":
 
     for numbers, target, valid_result in sample_test_cases:
         print(two_sum(numbers, target))
-

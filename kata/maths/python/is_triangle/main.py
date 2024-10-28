@@ -1,16 +1,17 @@
-#==Generate By touchpy==
+# ==Generate By touchpy==
 
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
 
-'''
+"""
 En todo triángulo la suma de las longitudes de dos lados cualesquiera es siempre mayor a la longitud del lado restante.
 
 |a+b| > |c|, |a+c| > |b| y |b+c| > |a|.
-'''
+"""
 
-def is_triangle(a,b,c):
+
+def is_triangle(a, b, c):
     return True if abs((a + b) > c) and abs((a + c) > b) and abs((b + c) > a) else False
 
 

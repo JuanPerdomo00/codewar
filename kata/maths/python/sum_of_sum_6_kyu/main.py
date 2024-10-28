@@ -3,8 +3,7 @@
 # === Generate By Touchpy ===
 
 
-
-'''
+"""
 Let's define two functions:
 
     S(N) — sum of all positive numbers not more than N
@@ -21,10 +20,10 @@ Let's define two functions:
         S(Z(3)) = S(10) = 55
 
         The input range is 1 <= N <= 10^9 and there are 80 ( 40 in LC ) test cases, of which most are random.
-'''
+"""
 
 
-#def sum_of_sums(n):
+# def sum_of_sums(n):
 #    z = lambda n: sum(((x * n) - (x + 1)) for x in range(1, n + 1)) + 1
 #
 #    def s(z):
@@ -40,7 +39,7 @@ def sum_of_sums(N):
         return (N * (N + 1)) // 2
 
     def Z(N):
-        return N * (N+1) * (N+2) // 6
+        return N * (N + 1) * (N + 2) // 6
 
     return S(Z(N))
 

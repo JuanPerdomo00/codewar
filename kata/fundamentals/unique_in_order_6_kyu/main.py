@@ -3,7 +3,7 @@
 # === Generate By Touchpy ===
 
 
-'''
+"""
 Implement the function unique_in_order which takes as argument a sequence and returns a list of items without any elements with the same value next to each other and preserving the original order of elements.
 
 For example:
@@ -12,22 +12,17 @@ For example:
     unique_in_order'(ABBCcAD')         == ['A', 'B', 'C', 'c', 'A', 'D']
     unique_in_order([1, 2, 2, 3, 3])   == [1, 2, 3]
     unique_in_order((1, 2, 2, 3, 3))   == [1, 2, 3]
-'''
-
+"""
 
 
 def unique_in_order(s: str) -> list[str]:
-      exists = []
+    exists = []
 
-      for item in s:
-          if not exists or item != exists[-1]:
-              exists.append(item)
-      
-      return exists
-    
+    for item in s:
+        if not exists or item != exists[-1]:
+            exists.append(item)
 
-
-
+    return exists
 
 
 if __name__ == "__main__":
@@ -56,4 +51,3 @@ if __name__ == "__main__":
     print("Should work with different element types")
     print(unique_in_order([1, 2, 3, 3, -1]) == [1, 2, 3, -1])
     print(unique_in_order(["a", "b", "b", "a"]) == ["a", "b", "a"])
-

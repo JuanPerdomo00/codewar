@@ -29,7 +29,6 @@ Hint: You're not meant to calculate the factorial. Find another way to find the 
 """
 
 
-
 # MATCH = r"0+$"
 
 # for n in range(1, 51):
@@ -42,30 +41,30 @@ Hint: You're not meant to calculate the factorial. Find another way to find the 
 #         else:
 #             print(f"No se encontraron ceros al final en el factorial de {n}!")
 #             print(f"{factorial(n)}")
-            
-            
+
 
 sys.set_int_max_str_digits(1000000)
+
 
 def zeros(n):
     MATCH = re.search(r"0+$", str(factorial(n)))
     return len(MATCH.group(0)) if MATCH else 0
 
+
 if __name__ == "__main__":
     # for x in range(1, 100):
     #     print(f"El factorial de {x}! tiene {zeros(x)} cantidad de ceros finales")
-        
-    
+
     print(zeros(0) == 0, "Testing with n = 0")
-    
+
     print(zeros(6) == 1, "Testing with n = 6")
-    
+
     print(zeros(30) == 7, "Testing with n = 30")
-    
+
     print(zeros(100) == 24, "Testing with n = 100")
-    
+
     print(zeros(1000) == 249, "Testing with n = 1000")
-    
+
     print(zeros(100000) == 24999, "Testing with n = 100000")
-    
+
     print(zeros(1000000000) == 249999998, "Testing with n = 1000000000")

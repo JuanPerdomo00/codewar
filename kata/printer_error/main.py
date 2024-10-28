@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # === Generate By Touchpy ===
 
-'''
+"""
 In a factory a printer prints labels for boxes. For one kind of boxes the printer has to use colors which, for the sake of simplicity, are named with letters from a to m.
 
 The colors used by the printer are recorded in a control string. For example a "good" control string would be aaabbbbhaijjjm meaning that the printer used three times color a, four times color b, one time color h then one time color a...
@@ -19,17 +19,16 @@ Examples:
 
     s="aaaxbbbbyyhwawiwjjjwwm"
     printer_error(s) => "8/22"
-'''
+"""
 
 
 import re
 
-def printer_pointer(s: str):
-     errors = sum(1 for c in s if c < 'a' or c > 'm') 
-     return f"{errors}/{len(s)}"
-                     
 
-    
+def printer_pointer(s: str):
+    errors = sum(1 for c in s if c < "a" or c > "m")
+    return f"{errors}/{len(s)}"
+
 
 if __name__ == "__main__":
     s1 = "aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbmmmmmmmmmmmmmmmmmmmxyz"
@@ -39,6 +38,6 @@ if __name__ == "__main__":
     print(printer_pointer(s2))
     print(printer_pointer(s3))
 
-    assert printer_pointer(s1) == '3/56'
-    assert printer_pointer(s2) == '6/60'
-    assert printer_pointer(s3) == '11/65'
+    assert printer_pointer(s1) == "3/56"
+    assert printer_pointer(s2) == "6/60"
+    assert printer_pointer(s3) == "11/65"

@@ -14,10 +14,11 @@ Examples:(Input1, Input2 --> Output (explanation)))
 5, 9 --> "1110" (5 + 9 = 14 in decimal or 1110 in binary)
 """
 
-def add_binary(a: int,b: int) -> str:
+
+def add_binary(a: int, b: int) -> str:
     # xd
-    return bin(a+b)[2:]
+    return bin(a + b)[2:]
+
 
 if __name__ == "__main__":
     print(f"the decimal number is {add_binary(1,1)}")
-

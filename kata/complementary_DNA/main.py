@@ -1,26 +1,26 @@
-#==Generate By touchpy==
+# ==Generate By touchpy==
 
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-'''
+"""
 Adenina -> Timina or Timina -> Adenina
 Guanina -> Citosina or Citosina -> Guanina
 
 
-'''
+"""
 
 
 def DNA_strand(dna):
 
     base_nitrogenadas = {
-            'A':'T', 
-            'T': 'A', # Adenina, Timina
-            'G': 'C', 
-            'C': 'G', # Guanina, Citosina
-        }
+        "A": "T",
+        "T": "A",  # Adenina, Timina
+        "G": "C",
+        "C": "G",  # Guanina, Citosina
+    }
 
-    new_dna = ''
+    new_dna = ""
 
     for code in dna:
         for k, v in base_nitrogenadas.items():
@@ -28,8 +28,6 @@ def DNA_strand(dna):
                 new_dna += v
 
     return new_dna
-            
-
 
 
 if __name__ == "__main__":

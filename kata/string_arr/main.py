@@ -1,11 +1,13 @@
-#==Generate By touchpy==
+# ==Generate By touchpy==
 
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
+
 def string_to_array(s):
-        # your code here
-        return s.split()
+    # your code here
+    return s.split()
+
 
 print(string_to_array("Robin Singh"))
 print(string_to_array("CodeWars"))
