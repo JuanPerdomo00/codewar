@@ -25,7 +25,7 @@ def find_short(s: str):
     # else:
     #    print(pdic)
 
-    return min(len(l) for l in s.split())
+    return min(len(lst) for lst in s.split())
 
 
 if __name__ == "__main__":

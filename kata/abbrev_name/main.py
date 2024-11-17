@@ -17,8 +17,8 @@ It should look like this:
 
 
 def abbrev_name(name: str):
-    l = list(map(lambda n: n.capitalize()[0], name.split(" ")))
-    return f"{l[0]}.{l[1]}"
+    lista = list(map(lambda n: n.capitalize()[0], name.split(" ")))
+    return f"{lista[0]}.{lista[1]}"
 
 
 if __name__ == "__main__":

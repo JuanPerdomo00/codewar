@@ -26,7 +26,6 @@ def unique_in_order(s: str) -> list[str]:
 
 
 if __name__ == "__main__":
-
     print(unique_in_order("ABBCcA"))
     print(unique_in_order("AAAABBBCCDAABBB"))
     print(unique_in_order([1, 2, 2, 3, 3]))

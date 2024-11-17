@@ -17,7 +17,6 @@ Examples
 
 
 def order(sentence: str):
-
     list_sen = sentence.split()
 
     digit_dict = {

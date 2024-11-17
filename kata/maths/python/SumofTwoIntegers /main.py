@@ -26,10 +26,10 @@ b = 010 -> 2
  011 -> 2
 ################################################################################################################################
  Not bit a bit
- Cuando se opera con not se da lo contrario en signo mas -1 
+ Cuando se opera con not se da lo contrario en signo mas -1
  ~011 = -011+(-1) = -100 = -4
  ~010 = -010+(-1) = -011 = -3
- 
+
  Lo contrario pasaria si el binario fuera desde un principio negativo
  ~-011 Seria 2, porque cambia designo a positivo y ademas le resta 1 por lo que quedaria asi.
  -3 + 1, dinde -3 es la entrada que hacemos para operar.
@@ -37,11 +37,11 @@ b = 010 -> 2
 ################################################################################################################################
  Dasplazamiento a la derecha n bit
  a >> 1 # Con esto se le dice que desplaze un bit a la derecha
- 
+
  011 >> 1 = 32 16 8 4 2 1
                     0 1 1
                       0 1 [1]-> Este bit queda fuera del rango, por ende quedara convertido en 01 o 1
-                     
+
     Ahora desplazemolo 2 bit a la derecha, que pasaria?
     32 16 8 4 2 1
             0 1 1
@@ -50,20 +50,19 @@ b = 010 -> 2
 
  Desplazamiento a la izquierda n bit
  a << 1 # Con esto se le dice que se desplaze un bit a la izquerda
- 
+
  011 << 1 = 32 16 8 4 2 1
                     0 1 1
                     1 1 0 -> Se desplazo un bit a la izquierda, quedando asi en 110 o 6 entero.
-      
+
       Ahora desplazemolo 2 bits a la izquierda, que pasaria?
       32 16 8 4 2 1
               0 1 1
-          0 1 1 0 0     -> Se desplazo 2 bits a la izquierda, quedando asi en 01100 o 12 entero.       
+          0 1 1 0 0     -> Se desplazo 2 bits a la izquierda, quedando asi en 01100 o 12 entero.
 
 
-Apuntes by Jakepys.                    
+Apuntes by Jakepys.
 """
-
 
 """
     Task

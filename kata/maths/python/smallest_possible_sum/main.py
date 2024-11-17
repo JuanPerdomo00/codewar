@@ -34,8 +34,6 @@ Solution steps:
 
 """
 
-from cansii import CAnsii as c
-
 
 def solution(a: list):
     if len(a) == 1:

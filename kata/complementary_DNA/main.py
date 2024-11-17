@@ -12,7 +12,6 @@ Guanina -> Citosina or Citosina -> Guanina
 
 
 def DNA_strand(dna):
-
     base_nitrogenadas = {
         "A": "T",
         "T": "A",  # Adenina, Timina

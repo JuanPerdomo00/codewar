@@ -17,7 +17,6 @@ friend ["Ryan", "Kieran", "Mark"] `shouldBe` ["Ryan", "Mark"]
 
 
 def friend(x):
-
     return list(filter(lambda y: len(y) == 4, x))
 
 

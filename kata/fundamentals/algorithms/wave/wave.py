@@ -17,7 +17,6 @@ def wave(string: str) -> list:
 
 
 class TestWaveFunction(unittest.TestCase):
-
     def test_wave_example1(self):
         result = ["Hello", "hEllo", "heLlo", "helLo", "hellO"]
         self.assertEqual(wave("hello"), result)

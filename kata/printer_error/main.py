@@ -22,9 +22,6 @@ Examples:
 """
 
 
-import re
-
-
 def printer_pointer(s: str):
     errors = sum(1 for c in s if c < "a" or c > "m")
     return f"{errors}/{len(s)}"
