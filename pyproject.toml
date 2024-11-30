@@ -1,7 +1,7 @@
 [project]
 name = "codewar"
 version = "0.1.0"
-description = "Solutions to codewars exercises, some are very poorly optimized xd"
+description = "Solutions to codewars and more exercises, some are very poorly optimized xd"
 authors = [
     { name = "Juan Perdomo [Jakepy]", email = "perdomojuan187@gmail.com" }
 ]

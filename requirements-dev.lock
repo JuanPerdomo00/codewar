@@ -10,5 +10,5 @@
 #   universal: false
 
 -e file:.
-ruff==0.8.0
-    # via codewar
+ruff==0.8.1
+    # via various-exercises
